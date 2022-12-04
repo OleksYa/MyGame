@@ -8,10 +8,12 @@ public class Window {
     public Window(Painter painter) {
         jframe = new JFrame();
 
-        jframe.setSize(600,400);
         jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jframe.add(painter);
         jframe.setLocationRelativeTo(null);
+        jframe.pack();
+        //jframe.setResizable(false);
+        jframe.setExtendedState(JFrame.MAXIMIZED_BOTH);
         jframe.setVisible(true);
 
 

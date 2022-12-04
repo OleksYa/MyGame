@@ -18,7 +18,7 @@ public class MouseInputs implements MouseMotionListener, MouseListener {
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        painter.setObjPos(e.getX(), e.getY());
+       // painter.setObjPos(e.getX(), e.getY());
 
     }
 
